@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assests/css/style.css">
+</head>
+
+<body>
+    <div class="container p-2 mt-3">
+        <div class="row mt-5">
+            <div class="col-sm-3 d-flex flex-column ml-0 justify-content-start" id="leftBar">
+                <label for="difficulty" class="text-white font-weight-bold">Choose Difficulty :- </label>
+                <select class="form-control" id="difficulty">
+                    <option value="5">Easy</option>
+                    <option value="7">Medium</option>
+                    <option value="10">Difficult</option>
+                </select>
+                <button class="btn btn-block btn-light shadow mt-3" id="startBtn">Start Game</button>
+            </div>
+            <div id="gameBoard" class="shadow ml-4">
+            </div>
+            <div class="col-sm-3 ml-5" id="rightBar">
+                <div class="card card-body shadow text-center">
+                    <h3 class="text-primary font-weight-bold">Score :- <span id="score">0</span></h3>
+                </div>
+                <h5 class="text-white mt-3 font-weight-bold">Highest Score :- <span id="highscore"></span></h5>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="gameOverModal" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="gameOverModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="gameOverModalLabel">Game Over</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    OOPS!!! Game Over!!!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="highScoreModal" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="highScoreModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="highScoreModalLabel">New High Score</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Congratulations!!!🎉 You have beaten your previous high score!!!👏
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="assests/js/script.js"></script>
+</body>
+
+</html>

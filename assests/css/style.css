@@ -1,0 +1,39 @@
+body {
+  background: url("/assests/images/snack_bg.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#gameBoard {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  background-color: rgb(234, 255, 214);
+  border-radius: 12px;
+}
+
+.food {
+  background-color: rgb(175, 115, 66);
+  border-radius: 6px;
+}
+
+.snake {
+  background-color: rgb(2, 5, 165);
+  border: 1px solid rgb(182, 177, 177);
+  border-radius: 0px;
+}
+
+.snakeHead {
+  background-color: rgb(221, 15, 15);
+  border: 1px solid #e7e2e2;
+  border-radius: 0px;
+}
+
+.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
